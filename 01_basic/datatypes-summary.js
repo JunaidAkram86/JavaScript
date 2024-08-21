@@ -21,3 +21,16 @@ age: 22,
 const myFunction = function(){
 console.log("hello world");
 }
+
+// Stack(Primitive) , Heap (Non-Primitive) main same reference milta hai original value main change hota hai.
+let userOne = {
+    email: "junaid@123.com",
+    bankid: "Nordea"
+}
+let userTwo = userOne
+
+userTwo.email = "user2@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
